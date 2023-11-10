@@ -1,0 +1,179 @@
+/* Main.css */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main.css */
+/* ... (existing styles) */
+/* Main.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  background-image: url('../assets/back5.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Ensure the content is in front of the overlay */
+}
+
+
+/* ... (rest of your styles) */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; /* Adjust alignment as needed */
+}
+
+
+.clickable-card-container {
+  width: 30%; /* Each card takes up 33.33% width with spacing */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* ... (rest of your styles) */
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 100%; /* Each card takes up 33.33% width with spacing */
+  text-align: center;
+}
+
+
+button {
+  background-color: #57EACF;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+button:hover {
+  background-color: #24685b;
+}
+
+.card-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('../assets/images.jpeg');
+  
+  padding: 20px;
+  
+  height: 80%;
+  text-align: center;
+}
+
+.card-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-form input,
+.card-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  color: #fff;
+  border: 1px solid #000000;
+  background-color:rgb(48, 48, 48) ;
+  border-radius: 4px;
+}
+
+.card-form button {
+  background-color: #57EACF;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.card-form button:hover {
+  background-color: #24685b;
+  
+}
+/* ... (existing styles) */
+
+.full-card-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.close-button-main {
+ 
+  bottom: 10px; 
+  display: flex;/* Adjusted to place the button at the bottom */
+  align-items:end;/* Center the button horizontally */
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.close-button:hover {
+  background-color: #ddd;
+}
+.modal-overlay{
+  width: 90%;
+  padding-left: 20px;
+  margin-left: 20px;
+}

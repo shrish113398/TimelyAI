@@ -1,0 +1,127 @@
+/* Card.css */
+.card {
+  background-color: #fff;
+  border: 1px solid #000000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 75%; /* 20px margin on each side, adjust as needed */
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+  background-image: url('../assets/dark_background.jpg');
+  filter: brightness(90%); 
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9);/* Enlarge on hover */
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column; /* Updated to display buttons in a column */
+  justify-content: space-around;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.card-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fffcfc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Adjust the maximum width as needed */
+}
+
+p {
+  font-size: 1rem;
+  color: #d8d8d8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Adjust the maximum width as needed */
+}
+
+/* Updated to display input fields in a column */
+.card input,
+.card textarea,
+.card select {
+  width: 100%; /* Set the width to 100% for a single column */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 10px; /* Adjust margin as needed for spacing between fields */
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set text color to white */
+}
+
+.card-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column; /* Updated to display modal content in a column */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.card-modal h2,
+.card-modal p {
+  color: #fff;
+  margin: 10px;
+}
+
+.card-buttons-modal {
+  display: flex;
+  flex-direction: column; /* Updated to display buttons in a column */
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.card-buttons-modal button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card-buttons-modal button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  position: absolute;
+  bottom: 10px; /* Adjusted to place the button at the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #ddd;
+}
